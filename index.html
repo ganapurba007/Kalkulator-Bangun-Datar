@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Kalkulator Segitiga</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="container">
+		<!--Luas Segitiga-->
+		<div class="header">	
+			<h1>Selamat Datang di Kaltik</h1>
+			<p>Hai Sobat. Selamat datang di Kaltik</p>
+			<p>Sebuah web sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+		</div>
+
+		<div class="nav">	
+			<div class="segitiga"><a href="index.html">Segitiga</a></div>
+			<div class="jajargenjang"><a href="html/jajargenjang.html">Jajargenjang</a></div>
+		</div>
+
+		<div class="luasbangun">
+			<h1>Luas Segitiga</h1>
+			<div class="kontenluas">
+				<img src="assets/img/segitiga.png" alt="segitiga">
+				<p>Rumus Luas Segitiga yaitu :</p>
+				<p class="rumus">L = 1/2 x a x t</p>
+				<p class="keterangan">Dimana : <br>
+					L = Luas <br>
+					a = Panjang Alas <br>
+					t = Tinggi
+					<br><br>
+					<hr>
+				</p>
+			</div>
+
+			<div class="hitungluas">
+				<h1>Hitung Luas Segitiga</h1>
+
+				<form name="form">
+
+				<input type="text" id="alas" placeholder="Alas" required>
+				<br>
+				<input type="text" id="tinggi" placeholder="Tinggi" required><br>
+				<p id="luas"></p>
+				<br>
+
+				</form>
+
+				<button onclick="hitung()" class="hitung">Hitung</button><br>
+				<button onclick="reset()" class="reset">Reset</button>
+				
+			</div>
+		</div>
+		<br><br>
+
+		<!--Keliling Segitiga-->
+		<div class="kelilingbangun">
+			<h1>Keliling Segitiga</h1>
+			<div class="kontenkeliling">
+				<img src="assets/img/segitiga.png" alt="segitiga">
+				<p>Rumus Keliling Segitiga yaitu :</p>
+				<p class="rumus">K = S1 + S2 + S3</p>
+				<p class="keterangan">Dimana : <br>
+					K = Keliling <br>
+					S1 = Sisi A <br>
+					S2 = Sisi B <br>
+					S3 = Sisi C <br>
+					<br><br>
+					<hr>
+				</p>
+			</div>
+
+			<div class="hitungkeliling">
+				<h1>Hitung Keliling Segitiga</h1>
+
+				<form name="form2">
+
+				<input type="text" id="sisiA" placeholder="Sisi A" required>
+				<br>
+				<input type="text" id="sisiB" placeholder="Sisi B" required>
+				<br>
+				<input type="text" id="sisiC" placeholder="Sisi C" required>
+				<br>
+				<p id="keliling"></p>
+				<br>
+
+				</form>
+
+				<button onclick="hitung2()" class="hitung2">Hitung</button><br>
+				<button onclick="reset2()" class="reset2">Reset</button>
+				
+			</div>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+</html>
